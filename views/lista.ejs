@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de itens</title>
+</head>
+
+<body>
+  <h1>Lista de Itens</h1>
+  <ul>
+    <% itens.forEach(item=> { %>
+      <li>
+        <%= item.nome %> - <%= item.descricao %>
+      </li>
+      <% }); %>
+  </ul>
+  <a href="/itens/novo">Novo Item</a>
+</body>
+
+</html>
